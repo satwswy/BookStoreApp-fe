@@ -1,7 +1,10 @@
+import { Outlet } from 'react-router-dom';
 import {
     NavigationContainer,
-    LogoContainer
-} from './navbar.styles';
+    LogoContainer,
+    NavLinks,
+    NavLink,
+} from './navbar.styles.jsx';
 
 
 
@@ -12,7 +15,12 @@ const Navbar = () => {
         <>
             <NavigationContainer>
                 <LogoContainer to='/'></LogoContainer>
+                <NavLinks>
+                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to='/categories'>Categories</NavLink>
+                </NavLinks>
             </NavigationContainer>
+            <Outlet />
         </>
     )
 }

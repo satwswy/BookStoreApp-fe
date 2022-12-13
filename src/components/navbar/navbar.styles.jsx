@@ -18,3 +18,16 @@ export const LogoContainer = styled(Link)`
    background-repeat: no-repeat;
    background-size: cover;
 `
+export const NavLinks = styled.div`
+      width: 50 %;
+      height: 100 %;
+      display: flex;
+      align - items: center;
+      justify - content: flex - end;
+`
+
+export const NavLink = styled(Link)`
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+`
