@@ -29,5 +29,6 @@ export const NavLinks = styled.div`
 export const NavLink = styled(Link)`
       color: white;
       padding: 10px 15px;
+      font-size: 1.8rem;
       cursor: pointer;
 `
