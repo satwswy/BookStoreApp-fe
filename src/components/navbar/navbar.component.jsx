@@ -18,6 +18,7 @@ const Navbar = () => {
                 <NavLinks>
                     <NavLink to='/'>Home</NavLink>
                     <NavLink to='/categories'>Categories</NavLink>
+                    <NavLink to='/auth'>Sign in</NavLink>
                 </NavLinks>
             </NavigationContainer>
             <Outlet />
