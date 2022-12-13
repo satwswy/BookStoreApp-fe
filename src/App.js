@@ -8,8 +8,8 @@ function App() {
     <Routes>
       <Route path='/' element={<Navbar />}>
         <Route index element={<Home/>} />
+        <Route path='*' element={<NotFound/>}/>
       </Route>
-      <Route path='*' element={<NotFound/>}/>
     </Routes>
   );
 }
