@@ -1,6 +1,22 @@
 const Home = () => {
     return(
-        <div>hello</div>
+        <div className="wrapper">
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+    </div>
     )
 }
 
