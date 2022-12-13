@@ -1,7 +1,9 @@
+import { NotFoundContainer } from "./notFound.styles"
+
 
 const NotFound = ()=>{
     return(
-        <div>Not Found</div>
+        <NotFoundContainer>404 PAGE NOT FOUND</NotFoundContainer>
     )
 }
 
