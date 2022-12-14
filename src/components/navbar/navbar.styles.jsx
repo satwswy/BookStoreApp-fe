@@ -4,10 +4,11 @@ import Logo from '../../assets/logo.webp'
 
 export const NavigationContainer = styled.div`
   height: 70px;
-  width: 100%;
+  width: max-content;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  flex-wrap:wrap;
 `
 export const LogoContainer = styled(Link)`
    height: 100 %;
@@ -18,17 +19,11 @@ export const LogoContainer = styled(Link)`
    background-repeat: no-repeat;
    background-size: cover;
 `
-export const NavLinks = styled.div`
-      width: 50 %;
-      height: 100 %;
-      display: flex;
-      align - items: center;
-      justify - content: flex - end;
-`
+
 
 export const NavLink = styled(Link)`
       color: white;
       padding: 10px 15px;
-      font-size: 1.8rem;
+      font-size: xx-large;
       cursor: pointer;
 `

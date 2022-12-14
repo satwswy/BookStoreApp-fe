@@ -2,7 +2,6 @@ import { Outlet } from 'react-router-dom';
 import {
     NavigationContainer,
     LogoContainer,
-    NavLinks,
     NavLink,
 } from './navbar.styles.jsx';
 
@@ -15,11 +14,9 @@ const Navbar = () => {
         <>
             <NavigationContainer>
                 <LogoContainer to='/'></LogoContainer>
-                <NavLinks>
-                    <NavLink to='/'>Home</NavLink>
-                    <NavLink to='/categories'>Categories</NavLink>
-                    <NavLink to='/auth'>Sign in</NavLink>
-                </NavLinks>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/categories'>Categories</NavLink>
+                <NavLink to='/auth'>Sign in</NavLink>
             </NavigationContainer>
             <Outlet />
         </>
