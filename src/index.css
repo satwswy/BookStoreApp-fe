@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 20px 40px;
+  padding: 20px 150px;
   background-color:grey ;
   background-image: url("https://www.frontlist.in/storage/uploads/2021/04/20191219170611-GettyImages-1152794789.jpeg"); 
   background-repeat: no-repeat;
@@ -29,4 +29,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 20px 20px;
+  }
 }
