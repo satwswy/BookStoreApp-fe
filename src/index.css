@@ -23,14 +23,15 @@ code {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: white;
   
 }
 
 * {
   box-sizing: border-box;
 }
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 700px) {
   body {
     padding: 20px 20px;
   }
