@@ -7,10 +7,14 @@ CardTitle,
 CardDesc,
 BookListContainer,
 Searchbox,
-BookList
+BookList,
+Book,
+Title
 } from "./home.styles"
+import books from '../../books.json'
 
 const Home = () => {
+    console.log(books)
     return (
         <HeroContainer>
             <SelectedBookContainer>
@@ -22,7 +26,14 @@ const Home = () => {
             </SelectedBookContainer>
             <BookListContainer>
                 <Searchbox></Searchbox>
-                <BookList></BookList>
+                <BookList>
+                    {books.map((book,index)=>{
+                        return <Book key={index}>
+                            <img src={book.image} alt={book.title} />
+                            <Title>{book.title}</Title>
+                        </Book>
+                    })}
+                </BookList>
             </BookListContainer>
         </HeroContainer>
     )

@@ -24,7 +24,7 @@ transition: 0.3s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);   
 }
 `
-export const CardImage = styled.div`
+export const CardImage = styled.img`
 object-fit: cover;
 width: 100%;
 height: 35%;
@@ -62,6 +62,31 @@ border:1px solid yellow;
 `
 export const BookList = styled.div`
 width: 100%;
-height:92%;
 border:1px solid white;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+column-gap: 30px;
 `
+export const Book = styled.div`
+width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:5%;
+  height: 350px;
+  align-items: center;
+  margin-bottom:25px;
+  img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+  }
+  &:hover {
+    img {
+      opacity: 0.8;
+    }
+  }
+`
+export const Title = styled.span`
+  width: 100%;
+  height:20%;
+`;
