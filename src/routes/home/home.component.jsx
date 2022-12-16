@@ -1,20 +1,32 @@
-import { 
-HeroContainer,
-SelectedBookContainer,
-CardContainer,
-CardImage,
-CardTitle,
-CardDesc,
-BookListContainer,
-Searchbox,
-BookList,
-Book,
-Title
+import {
+    HeroContainer,
+    SelectedBookContainer,
+    CardContainer,
+    CardImage,
+    CardTitle,
+    CardDesc,
+    BookListContainer,
+    Searchbox,
+    BookList,
+    Book,
+    Title
 } from "./home.styles"
 import books from '../../books.json'
+import { useState } from "react";
 
 const Home = () => {
-    console.log(books)
+    const [currentPage, setCurrentPage] = useState(1);
+    const [booksPerPage] = useState(12);
+
+
+    const pageNumbers = [];
+    for (let i = 1; i <= Math.ceil(books.length / booksPerPage); i++) {
+        pageNumbers.push(i);
+    }
+    const indexOfLastBook = currentPage * booksPerPage;
+    const indexOfFirstBook = indexOfLastBook - booksPerPage;
+    const currentBooks = books.slice(indexOfFirstBook, indexOfLastBook);
+    const paginate = pageNumber => setCurrentPage(pageNumber);
     return (
         <HeroContainer>
             <SelectedBookContainer>
@@ -27,13 +39,20 @@ const Home = () => {
             <BookListContainer>
                 <Searchbox></Searchbox>
                 <BookList>
-                    {books.map((book,index)=>{
+                    {currentBooks.map((book, index) => {
                         return <Book key={index}>
                             <img src={book.image} alt={book.title} />
                             <Title>{book.title}</Title>
                         </Book>
                     })}
                 </BookList>
+                        {pageNumbers.map(number => (
+                            <div key={number}>
+                                <button onClick={() => paginate(number)}>
+                                    {number}
+                                </button>
+                            </div>
+                        ))}
             </BookListContainer>
         </HeroContainer>
     )
