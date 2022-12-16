@@ -1,8 +1,17 @@
-const Home = () => {
-    return(
-        <div>
+import { 
+HeroContainer,
+SelectedBookContainer,
+BookListContainer,
+Searchbox,
+BookList
+} from "./home.styles"
 
-    </div>
+const Home = () => {
+    return (
+        <HeroContainer>
+            <SelectedBookContainer></SelectedBookContainer>
+            <BookListContainer></BookListContainer>
+        </HeroContainer>
     )
 }
 
