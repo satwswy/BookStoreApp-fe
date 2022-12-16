@@ -10,7 +10,10 @@ const Home = () => {
     return (
         <HeroContainer>
             <SelectedBookContainer></SelectedBookContainer>
-            <BookListContainer></BookListContainer>
+            <BookListContainer>
+                <Searchbox></Searchbox>
+                <BookList></BookList>
+            </BookListContainer>
         </HeroContainer>
     )
 }
