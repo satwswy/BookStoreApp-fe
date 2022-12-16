@@ -56,8 +56,12 @@ border:1px solid blue;
 `
 
 export const Searchbox = styled.div`
-
+width: 100%;
+height:8%;
+border:1px solid yellow;
 `
 export const BookList = styled.div`
-
+width: 100%;
+height:92%;
+border:1px solid white;
 `
