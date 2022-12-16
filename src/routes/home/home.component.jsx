@@ -9,7 +9,8 @@ import {
     Searchbox,
     BookList,
     Book,
-    Title
+    Title,
+    PagesContainer
 } from "./home.styles"
 import books from '../../books.json'
 import { useState } from "react";
@@ -46,13 +47,13 @@ const Home = () => {
                         </Book>
                     })}
                 </BookList>
-                        {pageNumbers.map(number => (
-                            <div key={number}>
-                                <button onClick={() => paginate(number)}>
-                                    {number}
-                                </button>
-                            </div>
-                        ))}
+                <PagesContainer >
+                    {pageNumbers.map(number => (
+                        <button key={number} onClick={() => paginate(number)}>
+                            {number}
+                        </button>
+                    ))}
+                </PagesContainer>
             </BookListContainer>
         </HeroContainer>
     )

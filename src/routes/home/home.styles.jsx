@@ -90,3 +90,7 @@ export const Title = styled.span`
   width: 100%;
   height:20%;
 `;
+
+export const PagesContainer = styled.div`
+display:flex;
+`
