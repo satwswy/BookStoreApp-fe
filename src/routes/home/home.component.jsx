@@ -10,7 +10,8 @@ import {
     BookList,
     Book,
     Title,
-    PagesContainer
+    PagesContainer,
+    Button
 } from "./home.styles"
 import books from '../../books.json'
 import { useState } from "react";
@@ -49,9 +50,9 @@ const Home = () => {
                 </BookList>
                 <PagesContainer >
                     {pageNumbers.map(number => (
-                        <button key={number} onClick={() => paginate(number)}>
+                        <Button key={number} onClick={() => paginate(number)}>
                             {number}
-                        </button>
+                        </Button>
                     ))}
                 </PagesContainer>
             </BookListContainer>
