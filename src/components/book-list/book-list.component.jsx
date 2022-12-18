@@ -33,11 +33,11 @@ const BookList = () => {
                 })}
             </Books>
             <PagesContainer >
-                {pageNumbers.map(number => (
+                {pageNumbers.map(number => 
                     <Button key={number} onClick={() => paginate(number)}>
                         {number}
                     </Button>
-                ))}
+                )}
             </PagesContainer>
         </BookListContainer>
     )
