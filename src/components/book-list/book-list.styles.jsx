@@ -5,6 +5,7 @@ export const BookListContainer = styled.div`
 width: 65%;
 height:100%;
 border:1px solid blue;
+position:relative;
 `
 
 export const Searchbox = styled.div`
@@ -56,6 +57,9 @@ export const Title = styled.span`
 
 export const PagesContainer = styled.div`
 display:flex;
+position:absolute;
+bottom:0;
+left:0;
 `
 
 export const Button = styled.button`
