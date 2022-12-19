@@ -8,12 +8,6 @@ border:1px solid blue;
 position:relative;
 `
 
-export const Searchbox = styled.div`
-width: 100%;
-height:8%;
-border:1px solid yellow;
-`
-
 export const Books = styled.div`
 width: 100%;
 border:1px solid white;
