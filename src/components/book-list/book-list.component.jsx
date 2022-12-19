@@ -7,6 +7,7 @@ import {
     Button
 } from "./book-list.styles"
 import books from '../../books.json'
+import SearchBox from "../search-box/search-box.component";
 import { useState } from "react";
 
 const BookList = () => {
@@ -22,6 +23,7 @@ const BookList = () => {
     const paginate = pageNumber => setCurrentPage(pageNumber);
     return (
         <BookListContainer>
+            <SearchBox/>
             <Books>
                 {currentBooks.map((book, index) => {
                     return <Book key={index}>

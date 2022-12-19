@@ -14,6 +14,12 @@ border:1px solid white;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 column-gap: 30px;
+@media (max-width: 1300px) {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 700px) {
+  grid-template-columns: repeat(1, 1fr);
+}
 `
 
 export const Book = styled.div`
@@ -27,6 +33,7 @@ margin-bottom:25px;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 transition: 0.3s;
 border:1px dotted white;
+cursor:pointer;
 img {
     width: 100%;
     height: 75%;
@@ -34,9 +41,6 @@ img {
   }
 &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    img {
-      opacity: 0.8;
-    }
   }
 `
 
