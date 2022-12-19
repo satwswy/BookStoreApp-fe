@@ -4,7 +4,8 @@ import styled from "styled-components";
 export const BookListContainer = styled.div`
 width: 65%;
 border:1px solid blue;
-position:relative;
+display:flex;
+flex-direction:column;
 `
 
 export const Books = styled.div`
@@ -54,9 +55,8 @@ export const Title = styled.span`
 
 export const PagesContainer = styled.div`
 display:flex;
-position:absolute;
-bottom:0;
-left:0;
+flex-grow:1;
+align-items:flex-end;
 `
 
 export const Button = styled.button`
