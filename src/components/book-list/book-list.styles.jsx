@@ -10,7 +10,6 @@ flex-direction:column;
 
 export const Books = styled.div`
 width: 100%;
-border:1px solid white;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 column-gap: 30px;
