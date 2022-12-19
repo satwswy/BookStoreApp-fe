@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SearchContainer = styled.div`
-height:90px;
+height:120px;
 display:flex;
 justify-content: flex-end;
 align-items: center;
