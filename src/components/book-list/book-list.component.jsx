@@ -1,6 +1,5 @@
 import {
     BookListContainer,
-    Searchbox,
     Books,
     Book,
     Title,
@@ -23,7 +22,6 @@ const BookList = () => {
     const paginate = pageNumber => setCurrentPage(pageNumber);
     return (
         <BookListContainer>
-            <Searchbox></Searchbox>
             <Books>
                 {currentBooks.map((book, index) => {
                     return <Book key={index}>
