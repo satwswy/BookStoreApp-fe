@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const BookListContainer = styled.div`
 width: 65%;
-height:100%;
 border:1px solid blue;
 position:relative;
 `
