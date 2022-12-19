@@ -49,6 +49,10 @@ export const Title = styled.span`
   color: white;
   text-align:center;
   font-size:1.2rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 `;
 
 
