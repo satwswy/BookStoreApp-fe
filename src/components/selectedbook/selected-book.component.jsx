@@ -5,8 +5,12 @@ import {
     CardTitle,
     CardDesc
 } from "./selected-book.styles"
+import { useContext } from "react"
+import { SelectedBookContext } from "../../context/SelectedBookContext"
+
 
 const SelectedBook = () => {
+    const {selectedBook}= useContext(SelectedBookContext)
     return (
         <SelectedBookContainer>
             <CardContainer>
