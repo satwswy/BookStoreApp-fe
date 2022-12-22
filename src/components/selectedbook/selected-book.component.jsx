@@ -14,9 +14,9 @@ const SelectedBook = () => {
     return (
         <SelectedBookContainer>
             <CardContainer>
-                <CardImage></CardImage>
-                <CardTitle>hey</CardTitle>
-                <CardDesc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi placeat modi, corporis quae dignissimos saepe esse similique optio ad! Quae maiores incidunt minus suscipit tempore cum blanditiis error quo dignissimos.</CardDesc>
+            <CardImage src={selectedBook!==null?selectedBook.image:""}/>
+                <CardTitle>{selectedBook!==null?selectedBook.title:"title"}</CardTitle>
+                <CardDesc>{selectedBook!==null?selectedBook.desc:"desc"}</CardDesc>
             </CardContainer>
         </SelectedBookContainer>
     )
