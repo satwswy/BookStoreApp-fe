@@ -31,7 +31,7 @@ align-items: center;
 margin-bottom:25px;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 transition: 0.3s;
-border:1px dotted white;
+border: 1px solid rgb(133, 30, 30);
 cursor:pointer;
 img {
     width: 100%;
@@ -45,14 +45,8 @@ img {
 
 export const Title = styled.span`
   width: 100%;
-  height:20%;
   color: white;
   text-align:center;
-  font-size:1.2rem;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
 `;
 
 

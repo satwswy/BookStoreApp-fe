@@ -21,23 +21,32 @@ transition: 0.3s;
 export const CardImage = styled.img`
 object-fit: cover;
 width: 100%;
-height: 35%;
 border:2px solid purple;
 `
 
 export const CardTitle = styled.h2`
-font-size: 1.5rem;
+font-size: 1.3rem;
 color: #ffffff;
 font-weight: 600;
 text-align: center;
 text-transform: uppercase;
 letter-spacing: 0.01em;
 border:2px solid blue;
+line-height:37px;
 `
 
 export const CardDesc = styled.p`
 font-size: 1.2rem;
+line-height:37px;
 color: #ffffff;
 letter-spacing: 0.01em;
 border:2px solid green;
+`
+
+export const CardTag = styled.h3`
+font-size:1.4rem;
+font-style: italic;
+text-align:center;
+color:papayawhip;
+font-family: 'Crimson Text', serif;
 `
