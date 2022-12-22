@@ -1,11 +1,52 @@
-import styled from "styled-components";
+import styled,{keyframes} from "styled-components";
 
+const rotate = keyframes`
+0% {
+    transform: perspective(400px) rotateY(0);
+}
+
+100% {
+    transform: perspective(400px) rotateY(360deg);
+}
+`
+
+const opacity = keyframes`
+0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`
 export const SelectedBookContainer = styled.div`
 width: 35%;
-border:1px solid yellow;
+opacity: 100%;
+animation: ${opacity} 2s;
+`
+
+export const NotSelectedBookContainer = styled.div`
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:50px;
+width: 35%;
+background-color:inherit;
+color:papayawhip;
+text-align:center;
+`
+
+export const NotSelectedHeader = styled.h1`
+margin-top:50px;
+`
+export const NotSelectedImage = styled.img`
+width: 250px;
+height:250px;
+animation:15s ${rotate} infinite linear ;
 `
 
 export const CardContainer = styled.div`
+
 width:100%;
 height:100%;
 display:flex;
@@ -18,6 +59,8 @@ transition: 0.3s;
 `
 
 export const CardImage = styled.img`
+
+margin-bottom:40px;
 object-fit: cover;
 width: 100%;
 `

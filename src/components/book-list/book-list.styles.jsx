@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 
 export const BookListContainer = styled.div`
-width: 65%;
-border:1px solid blue;
+width: 60%;
 display:flex;
 flex-direction:column;
 `
