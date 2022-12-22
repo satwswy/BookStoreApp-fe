@@ -14,7 +14,7 @@ import { SelectedBookContext } from "../../context/SelectedBookContext";
 const BookList = () => {
     const { setSelectedBook } = useContext(SelectedBookContext)
     const [currentPage, setCurrentPage] = useState(1);
-    const [booksPerPage] = useState(12);
+    const [booksPerPage] = useState(6);
     const pageNumbers = [];
     for (let i = 1; i <= Math.ceil(books.length / booksPerPage); i++) {
         pageNumbers.push(i);
