@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const SelectedBookContainer = styled.div`
 width: 35%;
-height:100%;
 border:1px solid yellow;
 `
 
@@ -21,7 +20,6 @@ transition: 0.3s;
 export const CardImage = styled.img`
 object-fit: cover;
 width: 100%;
-border:2px solid purple;
 `
 
 export const CardTitle = styled.h2`
@@ -31,7 +29,6 @@ font-weight: 600;
 text-align: center;
 text-transform: uppercase;
 letter-spacing: 0.01em;
-border:2px solid blue;
 line-height:37px;
 `
 
@@ -40,7 +37,7 @@ font-size: 1.2rem;
 line-height:37px;
 color: #ffffff;
 letter-spacing: 0.01em;
-border:2px solid green;
+text-align:center;
 `
 
 export const CardTag = styled.h3`
